@@ -1,0 +1,39 @@
+.task {
+  background-color: $colorBgSecondary;
+  border-radius: 10px;
+  padding: 20px;
+
+  h2 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+}
+
+.task__question {
+}
+
+.task__answers {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+
+  margin-top: 20px;
+}
+
+.task__answer {
+  button {
+    padding: 10px;
+    border: 1px solid $colorAccent;
+    border-radius: 5px;
+    width: 100%;
+
+    transition: all 0.1s linear;
+    
+
+    &:hover {
+        background-color: $colorAccentHover;
+        transform: scale(1.02);
+        box-shadow: 0 0 5px $colorAccentHover;
+    }
+  }
+}

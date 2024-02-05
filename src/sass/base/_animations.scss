@@ -1,7 +1,27 @@
-@keyframes marqueePlaces {
-    from {
-        transform: translateX(0%);
-    } to {
-        transform: translateX(-50%);
-    }
+@keyframes showSucces {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10%);
+  }
+
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes hideSucces {
+  from {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%);
+  }
+
+  to {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10%);
+  }
 }
